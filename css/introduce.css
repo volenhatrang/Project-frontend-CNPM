@@ -1,0 +1,17 @@
+.itemText{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    --swiper-theme-color: #007aff;
+    --swiper-navigation-size: 44px;
+    color: #333;
+    text-align: justify;
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    padding: 10px 0;
+}
+span{
+    color: #333;
+}

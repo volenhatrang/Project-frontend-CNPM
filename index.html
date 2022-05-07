@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./fonts/themify-icons/themify-icons.css"/>
+    <title>Ẩm thực Thầy Y</title>
+
+        
+</head>
+<body>
+
+<div id="container-login">
+    <form id="Login">
+        <div class="container-content">
+            <h2><b>Login</b></h2>
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter username" name="username"/>
+            <label for="pass"><b>PassWord</b></label>
+            <input type="password" placeholder="Enter password"  name="pass"/>
+            <button type="submit" class="loginbtn">LOGIN</button>
+            <button type="button" class="canclebtn" onclick="document.getElementById('container-login').style.display='none'">CANCLE</button>
+            <span class="pass">Forgot  <a href="#">password?</a></span>
+        </div>
+    </form> 
+</div> 
+
+    <div id="main">
+        <div id="header">
+            <div class="banner">
+                <ul class="heading-image">
+                    <li><img src="./image/logo thay y.jpg" class="logo" alt="logo" width="100px" ></li>
+                    <li><img src="./image/slogan-header.jpg" class="slogan" alt="slogan " height="130px" width="480px"></li>
+                </ul>
+               
+                
+                <ul class="btn">
+                    <li><button type="button" class="btn btn-warning"  onclick="document.getElementById('container-login').style.display='flex'">
+                        <i class="ti-user"></i> Đăng nhập</button></li>
+                    <li><button type="button" class="btn btn-warning">Đăng kí</button></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <ul class="nav_menu">
+                    <li><a href="/index.html">Trang chủ</a></li>
+                    <li><a href="/introduce.html">Giới Thiệu</a></li>
+                    <li><a href="#">Món Việt</a></li>
+                    <li><a href="#">Món Chay</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <div class="search_content">
+                    <img src="./image/search-prefix.png" />
+                    <input id="txtsearch" name="txtsearch" type="text" class="form-control" onblur="keywordBlur($(this))" onfocus="keywordFocus($(this))" placeholder="Tìm món ăn, nguyên liệu, cách nấu, dịp nấu"/>
+                </div>
+            </div>
+            <div class="slider"></div>
+        </div>
+
+        <div id="background-main">
+                <div id="main-content">
+                    <div class="navhome-box"> 
+                        <div class="row">        
+                            <div class="navhome-header row1">  
+                                   <a href="#">
+                                        NGUYÊN LIỆU </a>   
+                            </div>  
+                         </div>   
+                         <div class="row">      
+                             <div class="navhome-list ">      
+                                    
+                                     <img class="img-responsive lazy" src="./image/nguyen-lieu-500-392-16550.jpg" alt="Nguyên liệu" width="200px">
+                                 
+                                     <div class="navhome-group gr1 ">
+                                         <h3>Thịt</h3>
+                                    
+                                     <ul>
+                                         <li>Thịt Heo</li>
+                                         <li>Thịt Bò</li>
+                                         <li>Thịt Gà</li>
+                                         <li>Thịt Vịt</li>
+                                     </ul>
+                                     </div>
+           
+                                     <div class="navhome-group gr1 between1">
+                                          <h3>Hải sản</h3>
+                                    
+                                         <ul>
+                                             <li>Cá</li>
+                                             <li>Tôm</li>
+                                             <li>Cua, Ghẹ</li>
+                                             <li>Mực</li>
+                                             <li>Khác</li>
+                                         </ul>
+                                     </div>
+                                                                 
+                                     <div class="navhome-group gr1">
+                                         <h3>Khác</h3>
+                                         <ul>
+                                             <li>Rau, củ, quả,...</li>
+                                             <li>Nghêu, sò, ốc, ...</li>
+                                             <li>Trứng</li>
+                                             <li>Đậu hủ</li>
+                                         </ul>
+                                     </div>
+                                                
+                                  </div>             
+                                         
+                         </div>    
+                    </div>
+         
+                    <div class="navhome-box"> 
+                        <div class="row">        
+                            <div class="navhome-header row2">  
+                                    <a href="#"> CÁCH CHẾ BIỂN </a>   
+                            </div>  
+                        </div>   
+                        <div class="row">      
+                            <div class="navhome-list ">        
+                                <img class="img-responsive lazy" src="./image/nguyen-lieu-500-392-16550.jpg" alt="Nguyên liệu" width="200px"/>
+                                  
+                                    <div class="navhome-group gr2">
+                                        <ul>
+                                            <li>Nướng</li>
+                                            <li>Chiên</li>
+                                            <li>Xào</li>
+                                            <li>Hấp</li>
+                                        </ul>
+                                    </div>
+            
+                                    <div class="navhome-group gr2 between2">
+                                        <ul>
+                                            <li>Gỏi/Nộm</li>
+                                            <li>Lẩu</li>
+                                            <li>Hầm</li>
+                                            <li>Quay</li>
+                                            <li>Om</li>
+                                        </ul>
+                                    </div>
+                                                                  
+                                    <div class="navhome-group gr2">
+                                        <ul>
+                                            <li>Cháo</li>
+                                            <li>Phở</li>
+                                            <li>Bún</li>
+                                            <li>...</li>
+                                        </ul>
+                                    </div>
+                                                 
+                            </div>             
+                        </div>    
+                    </div>
+
+
+                    <div class="navhome-box"> 
+                        <div class="row">        
+                            <div class="navhome-header row3">  
+                                    <a href="#">DỊP NẤU</a>   
+                            </div>  
+                        </div>   
+                        <div class="row">      
+                            <div class="navhome-list ">        
+                                <img class="img-responsive lazy" src="./image/nguyen-lieu-500-392-16550.jpg" alt="Nguyên liệu" width="200px"/>
+                                  
+                                    <div class="navhome-group gr3">
+                                        <h3>DỊP</h3>
+                                        <ul>
+                                            <li>Món ăn cơm</li>
+                                            <li>Ăn sáng</li>
+                                            <li>Tiệc</li>
+                                            <li>Tết</li>
+                                        </ul>
+                                    </div>
+            
+                                    <div class="navhome-group gr3 between3">
+                                        <h3>Vùng Miền</h3>
+                                        <ul>
+                                            <li>Bắc</li>
+                                            <li>Trung</li>
+                                            <li>Nam</li>
+                                        </ul>
+                                    </div>
+                                                                  
+                                    <div class="navhome-group gr3">
+                                        <h3>Đặc sản</h3>
+                                        <ul>
+                                            <li>Hà Nội</li>
+                                            <li>Tây Bắc</li>
+                                            <li>Sài Gòn</li>
+                                            <li>...</li>
+                                        </ul>
+                                    </div>
+                                                 
+                            </div>             
+                        </div>    
+                    </div>
+    
+                </div>
+
+                <div id="banner-right">
+                    <div class="box-topnew">
+                        <div class="topnew-header">
+                            <h3>Món Mới</h3>
+                        </div> 
+                        <div class="topnew-main">
+                            <img src="./image/cach-lam-mi-xao-bo-thom-ngon-hap-dan-ky-nang-vao-bep-768-567-152552.jpg" width="100%">
+                        </div>
+                        <ul>
+                            <li><a href="#" title="Cách làm Mì Xào Bò thơm ngon hấp dẫn - Kỹ Năng Vào Bếp">Cách làm Mì Xào Bò thơm ngon hấp dẫn - Kỹ Năng Vào Bếp</a></li>
+                            <li><a href="#" title="Cách nấu Cháo Cá thơm ngon bổ dưỡng - Kỹ Năng Vào Bếp">Cách nấu Cháo Cá thơm ngon bổ dưỡng - Kỹ Năng Vào Bếp</a></li>
+                            <li><a href="#" title="Cách làm Mì Xào Chay thơm ngon và dễ làm">Cách làm Mì Xào Chay thơm ngon và dễ làm</a></li>
+                            <li><a href="#" title="Cách làm Cua Rang Muối thơm ngon và chuẩn vị">Cách làm Cua Rang Muối thơm ngon và chuẩn vị</a></li>
+                            <li><a href="#" title="Cách làm Xá Xíu ngon và dễ làm bằng lò nướng gia đình">Cách làm Xá Xíu ngon và dễ làm bằng lò nướng gia đình</a></li>
+                        </ul>
+
+                    </div>
+   
+                </div>
+
+        </div>
+
+        <div class="box-topview">
+            <div class="topview-header">
+                <h3>TOP MÓN NGON</h3>
+            </div>
+            <div class="wrapper">
+                <div class="box-item">
+                    <div class="item">
+                        <div class="title">
+                            <a href="#" title="Cách làm gỏi đu đủ ba khía Thái Lan rất dễ làm">Cách làm gỏi đu đủ ba khía Thái Lan rất dễ làm</a>
+                        </div>
+                        <div class="item-image">
+                            <img src="/image/cach-lam-goi-du-du-ba-khia-716-526-14718.jpg" class="img-responsive" alt="Cách làm gỏi đu đủ ba khía Thái Lan rất dễ làm" width="80%" height="100%">
+                        </div>
+                        <div class="item-footer">   
+                            <div class="pull-left"> 
+                                <a href="#" class="recipes-like" data-id="00000000-0000-0000-0000-000000000000" rel="nofollow">
+                                <span class="glyphicon glyphicon-heart-empty"></span>
+                                <span class="numberic">2063</span></a>      
+                                <a href="#cach-lam-goi-du-du-ba-khia" class="btn-simple popover-html recipes-share" rel="nofollow" title="" data-container="body" data-toggle="popover" data-html="true" data-placement="top" >
+                                <span class="fa fa-share-alt"></span></a> 
+                            </div>
+                            <div class="pull-right">  
+                                <a href="/cach-lam-goi-du-du-ba-khia/" class="recipes-more">Xem thêm<span class="fa fa-angle-double-right"></span></a>
+                            </div>
+                            
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="box-item">
+                    <div class="item">
+                        <div class="title">
+                            <a href="#" title="Cách làm Mì Xào Xá Xíu  - Mì Bay thơm ngon đặc trưng khó cưỡng">Cách làm Mì Xào Xá Xíu  - Mì Bay thơm ngon đặc trưng khó cưỡng</a>
+                        </div>
+                        <div class="item-image">
+                            <img src="/image/cach-lam-mi-xao-xa-xiu-716-526-12557 (1).jpg" class="img-responsive"  alt="Cách làm Mì Xào Xá Xíu  - Mì Bay thơm ngon đặc trưng khó cưỡng" width="80%" height="100%">          
+                        </div>
+                        <div class="item-footer">   
+                            <div class="pull-left"> 
+                                <a href="#" class="recipes-like" data-id="00000000-0000-0000-0000-000000000000" rel="nofollow">
+                                <span class="glyphicon glyphicon-heart-empty"></span>
+                                <span class="numberic">3649</span></a>      
+                                <a href="#cach-lam-mi-xao-xa-xiu" class="btn-simple popover-html recipes-share" rel="nofollow" title=""  data-container="body" data-toggle="popover" data-html="true" data-placement="top">
+                                <span class="fa fa-share-alt"></span></a> 
+                            </div>
+                            <div class="pull-right">  
+                                <a href="/cach-lam-mi-xao-xa-xiu/" class="recipes-more">Xem thêm<span class="fa fa-angle-double-right"></span></a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="box-item">
+                    <div class="item">
+                        <div class="title">
+                            <a href="/cach-uop-thit-nuong-lui/" title="Cách ướp Thịt Nướng Lụi thơm ngon ai cũng có thể làm">Cách ướp Thịt Nướng Lụi thơm ngon ai cũng có thể làm</a>                        
+                        </div>
+                        <div class="item-image">             
+                            <img src="/image/cach-uop-thit-nuong-lui-716-526-121412.jpg" class="img-responsive"  alt="Cách ướp Thịt Nướng Lụi thơm ngon ai cũng có thể làm" width="80%" height="100%">         
+                        </div>
+                        <div class="item-footer">   
+                            <div class="pull-left"> 
+                                <a href="#" class="recipes-like" data-id="00000000-0000-0000-0000-000000000000" rel="nofollow">
+                                <span class="glyphicon glyphicon-heart-empty"></span>
+                                <span class="numberic">15987</span></a>      
+                                <a href="#cach-uop-thit-nuong-lui/" class="btn-simple popover-html recipes-share" rel="nofollow" title="" data-container="body" data-toggle="popover" data-html="true" data-placement="top" >
+                                <span class="fa fa-share-alt"></span></a> 
+                            </div>
+                        <div class="pull-right">  
+                            <a href="/cach-uop-thit-nuong-lui/" class="recipes-more">Xem thêm<span class="fa fa-angle-double-right"></span></a>
+                        </div>
+                    </div> 
+                </div>
+
+            </div>
+            
+               
+            
+        </div>
+
+        <div id="Footer">
+            <div class="row">
+                <div class="nav">
+                    <ul>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Hợp tác</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="footer">
+                <div class="row" style="text-align: center; margin-bottom: 20px;">
+                    <img src="/image/Screenshot 2022-04-27 135620.png" alt="logo" style="text-align: center;">
+                </div>
+                <div class="row" style="display: flex; justify-content: space-evenly;">
+                    <a href="#" style="padding: 0 53px 0 15px;"><img src="/image/logo-thuvienamthuc-footer.jpg" alt="#"></a>
+                    <div class="textwiged" style=" padding: 0 15px 0 15px;">
+                        <span style="color: #ffcc00; font-weight: 700; font-size: 18px;">Xem nhiều</span>
+                        <br>
+                        <br>
+                        <a href="#"><span class="fa ti-angle-right">Món Việt</span></a>
+                        <br>
+                        <a href="#"><span class="fa ti-angle-right">Món Âu</span></a>
+                        <br>
+                        <a href="#"><span class="fa ti-angle-right">Món Hoa</span></a>
+                    </div>
+                    <div class="textwiged" style=" padding: 0 15px 0 15px;">
+                        <span style="color: #ffcc00; font-weight: 700; font-size: 18px;">Video</span>
+                        <br>
+                        <br>
+                        <a href="#"><span class="fa ti-angle-right">TOP 10 món của năm</span></a>
+                        <br>
+                        <a href="#"><span class="fa ti-angle-right">TOP 10 món của tháng</span></a>
+                        <br>
+                        <a href="#"><span class="fa ti-angle-right">TOP 10 món của tuần</span></a>
+                    </div>
+                    <div class="textwiged" style=" padding: 0 15px 0 15px;">
+                        <span style="color: #ffcc00; font-weight: 700; font-size: 18px;">Văn phòng</span>
+                        <br>
+                        <br>
+                        <a href="#"><span class="fa ti-location-pin">497 Điện Biên Phủ, P.3, Q.3, Tp.HCM</span></a>
+                        <br>
+                        <a href="#"><span class="fa ti-mobile">Hotline: 0903 646 893</span></a>
+                    </div>
+                </div>
+                <div class="row" style="text-align: center;">
+                    <div class="copyright" style="border-top: 1px solid #5f5f5f;margin: 0 50px 0 50px; padding: 20px 0;">
+                        <p style="text-align: center;">
+                            <a href="https://www.facebook.com/" rel="noopener noreferrer" target="_blank">
+                                <button class="btnfb" type="button">Facebook</button>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UC-H3vXmfMXImwrsF0dDfdHQ?sub_confirmation=1" target="_blank">
+                                <button class="btnyt" style="" type="button">Youtube</button>
+                            </a>
+                        </p>
+                        <p style="text-align: center; color: white;">Copyright © 2022 ThuVienAmThuc.VN. Ghi rõ nguồn khi phát hành lại thông tin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>      
+    </div>
+
+</body>
+</html>
