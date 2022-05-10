@@ -6,28 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/Form.css">
     <link rel="stylesheet" href="./fonts/themify-icons/themify-icons.css"/>
     <title>Ẩm thực Thầy Y</title>
-
-        
+   
 </head>
 <body>
+    
+<!-- LOGIN -->
 
-<div id="container-login">
-    <form id="Login">
-        <div class="container-content">
-            <h2><b>Login</b></h2>
-            <label for="username"><b>Username</b></label>
-            <input type="text" placeholder="Enter username" name="username"/>
-            <label for="pass"><b>PassWord</b></label>
-            <input type="password" placeholder="Enter password"  name="pass"/>
-            <button type="submit" class="loginbtn">LOGIN</button>
-            <button type="button" class="canclebtn" onclick="document.getElementById('container-login').style.display='none'">CANCLE</button>
-            <span class="pass">Forgot  <a href="#">password?</a></span>
+<div id="id01" class="modal">
+  
+  <form class="modal-content"  method="post">
+      <div class="container">
+
+    
+        <div class="Title">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <h2><b>LOGIN</b></h2>
         </div>
-    </form> 
-</div> 
+        
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+
+      </div>
+      
+  </form>
+</div>
+
+
+    <!-- SIGNUP -->
+    <div id="id02" class="modal">
+        
+        <form class="modal-content">
+          <div class="container">
+            <div class="Title">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <h2><b>Sign Up</b></h2>
+                <p>Please fill in this form to create an account.</p>
+            </div>
+            
+            <hr>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+      
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            
+            <label>
+              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
+            
+      
+            <div class="clearfix">
+              <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+              <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+          </div>
+        </form>
+   </div>
 
     <div id="main">
         <div id="header">
@@ -39,10 +89,12 @@
                
                 
                 <ul class="btn">
-                    <li><button type="button" class="btn btn-warning"  onclick="document.getElementById('container-login').style.display='flex'">
+                    <li><button type="button" class="btn btn-warning" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
                         <i class="ti-user"></i> Đăng nhập</button></li>
-                    <li><button type="button" class="btn btn-warning">Đăng kí</button></li>
+                    <li><button type="button" class="btn btn-warning"  onclick="document.getElementById('id02').style.display='block'" style="width:auto;" >
+                        Đăng kí</button></li>
                 </ul>
+                
             </div>
             <div class="menu">
                 <ul class="nav_menu">
