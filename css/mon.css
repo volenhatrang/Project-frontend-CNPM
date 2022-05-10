@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row-monviet{
+    display: flex;
+}
+
+.col-monviet {
+    float: left;
+    width: 33.333%;
+    padding: 12px;
+    margin: 20px 12px 20px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 4px 4px 10px rgb(0 0 0 / 40%);
+}
+
+.col-monviet p {
+    text-align: justify;
+}
+
+.col-monviet a{
+    color: #ec0004;
+    font-size: 11pt;
+    line-height: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.image-monviet{
+    width: 100%;
+    margin: 20px 0;
+}
+
+.clear{
+    clear: both;
+}
+
+.dialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    overflow: scroll;
+}
+
+.dialog-close-btn {
+    position: absolute;
+    top: 2px;
+    right: 6px;
+    text-decoration: none;
+}
+
+a.dialog-close-btn {
+    font-size: 40px;
+    padding: 20px 10px;
+}
+
+#dau-hu-chung:target,
+#dau-hu-tu-xuyen:target,
+#suon-xao:target,
+#hu-tieu:target,
+#cai-thia:target,
+#lagu-bo:target,
+#ca-nuc:target,
+#thit-heo-chien:target,
+#cua-rang:target,
+#my-chay:target,
+#dau-hu:target,
+#xa-xiu:target,
+#chao-ca:target,
+#mi-xao-bo:target {
+    visibility: visible;
+    
+}
+
+.dialog-body {
+    max-width: 1000px;
+    margin-top: 30px;
+    position: relative;
+    padding: 16px;
+    background-color: #f7f7f7;   
+    border-radius: 20px;
+    color: black;
+  
+}
+
+.video-huongdan {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 40%);
+    border-radius: 20px;
+    margin: 40px 0 0 0;
+    padding: 12px 0;
+}
+
+.yt {
+    display: flex;
+    justify-content: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/Form.css">
+    <link rel="stylesheet" href="./fonts/themify-icons/themify-icons.css"/>
+    <link rel="stylesheet" href="./css/introduce.css"/>
+    <link rel="stylesheet" href="./css/mon.css">
+    <title>Ẩm thực Thầy Y</title>
+
+        
+</head>
+<body>
+
+     <!-- FORM -->
+    <!-- LOGIN -->
+
+<div id="id01" class="modal">
+  
+    <form class="modal-content"  method="post">
+        <div class="container">
+  
+      
+          <div class="Title">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <h2><b>LOGIN</b></h2>
+          </div>
+          
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+            
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+  
+        </div>
+        
+    </form>
+  </div>
+  
+  
+      <!-- SIGNUP -->
+      <div id="id02" class="modal">
+          
+          <form class="modal-content">
+            <div class="container">
+              <div class="Title">
+                  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <h2><b>Sign Up</b></h2>
+                  <p>Please fill in this form to create an account.</p>
+              </div>
+              
+              <hr>
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+        
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+        
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+              
+              <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+              </label>
+              
+        
+              <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+              </div>
+            </div>
+          </form>
+     </div>
+
+
+
+ 
+ <!-- FORM -->
+
+
+
+    <div id="main">
+        <div id="header">
+            <div class="banner">
+                <ul class="heading-image">
+                    <li><img src="./image/logo thay y.jpg" class="logo" alt="logo" width="100px" ></li>
+                    <li><img src="./image/slogan-header.jpg" class="slogan" alt="slogan " height="130px" width="480px"></li>
+                </ul>
+               
+                
+                 
+                <ul class="btn">
+                    <li><button type="button" class="btn btn-warning" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+                        <i class="ti-user"></i> Đăng nhập</button></li>
+                    <li><button type="button" class="btn btn-warning"  onclick="document.getElementById('id02').style.display='block'" style="width:auto;" >
+                        Đăng kí</button></li>
+                </ul>
+                
+
+            </div>
+            <div class="menu">
+                <ul class="nav_menu">
+                    <li><a href="./index.html">Trang chủ</a></li>
+                    <li><a href="./introduce.html">Giới Thiệu</a></li>
+                    <li><a href="./monviet.html">Món Việt</a></li>
+                    <li><a href="./monchay.html">Món Chay</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <div class="search_content">
+                    <img src="./image/search-prefix.png" />
+                    <input id="txtsearch" name="txtsearch" type="text" class="form-control" onblur="keywordBlur($(this))" onfocus="keywordFocus($(this))" placeholder="Tìm món ăn, nguyên liệu, cách nấu, dịp nấu"/>
+                </div>
+            </div>
+            <div class="slider"></div>
+        </div>
+                        <!-- Content -->
+        <div id="content-monviet">
+            <div class="row-monviet">
+                <div class="col-monviet">
+                    <a href="#mi-xao-bo">CÁCH LÀM MÌ XÀO BÒ THƠM NGON HẤP DẪN - KỸ NĂNG VÀO BẾP</a>
+                    <div class="dialog overlay" id="mi-xao-bo">
+                        <div class="dialog-body">
+                            <a class="dialog-close-btn" href="#">&times;</a>
+                            <h3>Cách làm Mì Xào Bò thơm ngon hấp dẫn - Kỹ Năng Vào Bếp</h3>
+                            <p>Mì xào bò là một món ăn thơm ngon, cung cấp nguồn năng lượng dồi dào cho bữa sáng. Chế biến mì tôm xào bò cũng không quá cầu kỳ, phức tạp. Để thưởng thức món mì gói xào bò thơm ngon, trọn vị, cùng Thư viện ẩm thực tìm hiểu cách làm cực đơn giản sau đây.</p>
+                            <h4>Chuẩn bị: 20 phút | Nấu: 15 phút |</h4>
+                            <div style="background-color:#fcb040; padding: 1px 20px; border-radius: 16px; box-shadow: 0 0 10px rgb(0 0 0 / 40%);">
+                                <h3 style="text-align: center;">Nguyên liệu</h3>
+                                <h4>1. Thịt bò</h4>
+                                <h4>2. Mì gói</h4>
+                                <h4>3. Cải ngọt</h4>
+                                <h4>4. Hành lá</h4>
+                                <h4>5. Ngò</h4>
+                                <h4>6. Cà rốt</h4>
+                                <h4>7. Ớt sừng</h4>
+                                <h4>8. Hạt nêm, đường, bột năng, tiêu xay, tỏi băm, nước tương, dầu hào, tương ớt</h4>
+                            </div>
+                            <div class="video-huongdan">
+                                <h3 style="text-align: center;">Video hướng dẫn</h3>
+                                <div class="yt">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2yipa0alsoA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="image-monviet" src="/Project-frontend-CNPM-main/image/mixaobo.jpg" alt="">
+                    <p>Mì xào bò là một món ăn thơm ngon, cung cấp nguồn năng lượng dồi dào cho bữa sáng. Chế biến mì tôm xào bò cũng không quá cầu kỳ, phức tạp. Để thưởng thức món mì gói xào bò thơm ngon, trọn vị, cùng Thư viện ẩm thực tìm hiểu cách làm cực đơn giản sau đây.</p>
+                </div>
+                <div class="col-monviet">
+                    <a href="#chao-ca">CÁCH NẤU CHÁO CÁ THƠM NGON BỔ DƯỠNG - KỸ NĂNG VÀO BẾP</a>
+                    <div class="dialog overlay" id="chao-ca">
+                        <div class="dialog-body">
+                            <a class="dialog-close-btn" href="#">&times;</a>
+                            <h3>Cách nấu Cháo Cá thơm ngon bổ dưỡng - Kỹ Năng Vào Bếp</h3>
+                            <p>Cháo cá lóc - món ăn thơm ngon đặc biệt gây “thương nhớ” trong ẩm thực Cần Thơ. Nếu bạn đang muốn tìm hiểu về món cháo này thì hãy tham khảo những chia sẻ chi tiết dưới đây nhé!</p>
+                            <h4>Chuẩn bị: 30 phút | Nấu: 40 phút |</h4>
+                            <div style="background-color:#fcb040; padding: 1px 20px; border-radius: 16px; box-shadow: 0 0 10px rgb(0 0 0 / 40%);">
+                                <h3 style="text-align: center;">Nguyên liệu</h3>
+                                <h4>1. Cá lóc đồng</h4>
+                                <h4>2. Gạo</h4>
+                                <h4>3. Hành lá</h4>
+                                <h4>4. Nấm rơm</h4>
+                                <h4>5. Ngò</h4>
+                                <h4>6. Hành tím, gừng, hành phi, tiêu, muối, đường, hạt nêm, nước mắm</h4></div>
+                            <div class="video-huongdan">
+                                <h3 style="text-align: center;">Video hướng dẫn</h3>
+                                <div class="yt">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/w8P754LVhY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="image-monviet" src="/Project-frontend-CNPM-main/image/chaoca.jpg" alt="">
+                    <p>Cháo cá lóc - món ăn thơm ngon đặc biệt gây “thương nhớ” trong ẩm thực Cần Thơ. Nếu bạn đang muốn tìm hiểu về món cháo này thì hãy tham khảo những chia sẻ chi tiết dưới đây nhé!</p>
+                </div>
+                <div class="col-monviet">
+                    <a href="#xa-xiu">CÁCH LÀM XÁ XÍU NGON VÀ DỄ LÀM BẰNG LÒ NƯỚNG GIA ĐÌNH</a>
+                    <div class="dialog overlay" id="xa-xiu">
+                        <div class="dialog-body">
+                            <a class="dialog-close-btn" href="#">&times;</a>
+                            <h3>Cách làm Xá Xíu ngon và dễ làm bằng lò nướng gia đình</h3>
+                            <p>Thịt heo xá xíu là món ăn ngon với hương vị đậm đà, béo ngậy. Là một món ăn nổi tiếng trong bữa ăn hàng ngày của những người Hoa. Với hương vị ngon đậm đà lại dễ kết hợp với nhiều loại món ăn khác nên thịt heo xá xíu ngày càng trở nên phổ biến và có nhiều người ưa chuộng.</p>
+                            <h4>Chuẩn bị: 10 phút | Nấu: 30 phút |</h4>
+                            <div style="background-color:#fcb040; padding: 1px 20px; border-radius: 16px; box-shadow: 0 0 10px rgb(0 0 0 / 40%);">
+                                <h3 style="text-align: center;">Nguyên liệu</h3>
+                                <h4>1. Thịt nạc dăm</h4>
+                                <h4>2. Tỏi</h4>
+                                <h4>3. Tiêu</h4>
+                                <h4>4. Màu gạch tôm</h4>
+                                <h4>5. Ngũ vị hương</h4>
+                                <h4>6. Muối đường hạt nêm</h4>
+                                <h4>7. Sốt xá xíu</h4>
+                                <h4>8. Dầu hào</h4>
+                            </div>
+                            <div class="video-huongdan">
+                                <h3 style="text-align: center;">Video hướng dẫn</h3>
+                                <div class="yt">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zdnwuzNHtzk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="image-monviet" src="/Project-frontend-CNPM-main/image/xaxiu.jpg" alt="">
+                    <p>Thịt heo xá xíu là món ăn ngon với hương vị đậm đà, béo ngậy. Là một món ăn nổi tiếng trong bữa ăn hàng ngày của những người Hoa. Với hương vị ngon đậm đà lại dễ kết hợp với nhiều loại món ăn khác nên thịt heo xá xíu ngày càng trở nên phổ biến và có nhiều người ưa chuộng.</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="row-monviet">
+                <div class="col-monviet">
+                    <a href="#dau-hu">CÁCH LÀM MÓN ĐẬU HŨ NHỒI THỊT SỐT CÀ CHUA NGON ĐƠN GIẢN</a>
+                    <div class="dialog overlay" id="dau-hu">
+                        <div class="dialog-body">
+                            <a class="dialog-close-btn" href="#">&times;</a>
+                            <h3>Cách làm món Đậu hũ nhồi thịt sốt cà chua ngon đơn giản</h3>
+                            <p>Đậu hũ nhồi thịt là một món ăn khá quen thuộc với người dân Việt chúng ta. Món ăn đơn giản dễ làm mà lại mang một hương vị thơm ngon khó cưỡng cùng với hàm lượng giá trị dinh dưỡng cao. Vậy cách làm đậu hũ nhồi thịt như thế nào? Hãy cùng theo dõi bài viết dưới đây để hiểu rõ hơn.</p>
+                            <h4>Chuẩn bị: 10 phút | Nấu: 30 phút |</h4>
+                            <div style="background-color:#fcb040; padding: 1px 20px; border-radius: 16px; box-shadow: 0 0 10px rgb(0 0 0 / 40%);">
+                                <h3 style="text-align: center;">Nguyên liệu</h3>
+                                <h4>1. Đậu hũ vàng</h4>
+                                <h4>2. 300g thịt băm</h4>
+                                <h4>3. 4 quả cà chua</h4>
+                                <h4>4. Hành lá, ngò rí</h4>
+                                <h4>5. Muối đường hạt nêm</h4>
+                                <h4>6. Tỏi băm, hành tím băm, tiêu xay</h4>
+                                <h4>7. Tương ớt, tương cà</h4>
+                                
+                            </div>
+                            <div class="video-huongdan">
+                                <h3 style="text-align: center;">Video hướng dẫn</h3>
+                                <div class="yt">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Uo_rkeu5yyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="image-monviet" src="/Project-frontend-CNPM-main/image/dauhunhoithit.jpg" alt="">
+                    <p>Đậu hũ nhồi thịt là một món ăn khá quen thuộc với người dân Việt chúng ta. Món ăn đơn giản dễ làm mà lại mang một hương vị thơm ngon khó cưỡng cùng với hàm lượng giá trị dinh dưỡng cao. Vậy cách làm đậu hũ nhồi thịt như thế nào? Hãy cùng theo dõi bài viết dưới đây để hiểu rõ hơn.</p>                  
+                </div>
+                <div class="col-monviet">
+                    <a href="#my-chay">CÁCH LÀM MÌ XÀO CHAY THƠM NGON VÀ DỄ LÀM</a>
+                    <div class="dialog overlay" id="my-chay">
+                        <div class="dialog-body">
+                            <a class="dialog-close-btn" href="#">&times;</a>
+                            <h3>Cách làm Mì Xào Chay thơm ngon và dễ làm</h3>
+                            <p>Mì xào chay là một món ăn vô cùng thơm ngon và thanh đạm mà bạn có thể làm cho các bữa cơm gia đình của mình. Nếu bạn chưa biết cách làm món ăn này thì hãy cùng tìm hiểu cách làm trong bài viết này nhé.</p>
+                            <h4>Chuẩn bị: 10 phút | Nấu: 30 phút |</h4>
+                            <div style="background-color:#fcb040; padding: 1px 20px; border-radius: 16px; box-shadow: 0 0 10px rgb(0 0 0 / 40%);">
+                                <h3 style="text-align: center;">Nguyên liệu</h3>
+                                <h4>1. Mỳ chay</h4>
+                                <h4>2. 200g cải thảo</h4>
+                                <h4>3. 100g cà rốt</h4>
+                                <h4>4. Nấm rơm</h4>
+                                <h4>5. Đậu que</h4>
+                                <h4>6. 30g hành baro</h4>
+                                <h4>7. 30g cần tàu</h4>
+                                <h4>8. Ngò rí, ớt</h4>
+                                <h4>9. Hạt nêm, Muối, Đường, Tiêu, Dầu hào chay, Nước tương, Tương ớt</h4>
+                            </div>
+                            <div class="video-huongdan">
+                                <h3 style="text-align: center;">Video hướng dẫn</h3>
+                                <div class="yt">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Hwf5y6ob22k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                          
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="image-monviet" src="/Project-frontend-CNPM-main/image/mixaochay.jpg" alt="">
+                    <p>Mì xào chay là một món ăn vô cùng thơm ngon và thanh đạm mà bạn có thể làm cho các bữa cơm gia đình của mình. Nếu bạn chưa biết cách làm món ăn này thì hãy cùng tìm hiểu cách làm trong bài viết này nhé.</p>
+                </div>
+                <div class="col-monviet">
+                    <a href="#cua-rang">CÁCH LÀM CUA RANG MUỐI THƠM NGON VÀ CHUẨN VỊ</a>
+                    <div class="dialog overlay" id="cua-rang">
+                        <div class="dialog-body">
+                            <a class="dialog-close-btn" href="#">&times;</a>
+                            <h3>Cách làm Cua Rang Muối thơm ngon và chuẩn vị</h3>
+                            <p>Cua rang muối giòn rụm, mặn mặn ngòn ngọt mang hương vị vừa mới lạ vừa kích thích vị giác là món ăn vặt rất nhiều người yêu thích. Không chỉ thơm ngon mà món cua rang muối còn chứa nhiều dinh dưỡng của hải sản biển, thích hợp đưa vào thực đơn món ăn gia đình.</p>
+                            <h4>Chuẩn bị: 10 phút | Nấu: 30 phút |</h4>
+                            <div style="background-color:#fcb040; padding: 1px 20px; border-radius: 16px; box-shadow: 0 0 10px rgb(0 0 0 / 40%);">
+                                <h3 style="text-align: center;">Nguyên liệu</h3>
+                                <h4>1. 1kg Cua</h4>
+                                <h4>2. Muối, đường, hạt nêm</h4>
+                                <h4>3. Bột tôm khô</h4>
+                                <h4>4. Bột gạo nếp</h4>
+                                <h4>5. Bột chiên xù</h4>
+                                <h4>6. Ngũ vị hương</h4>
+                                <h4>7. Ớt bột</h4>
+                                <h4>8. Ớt hiểm</h4>
+                            </div>
+                            <div class="video-huongdan">
+                                <h3 style="text-align: center;">Video hướng dẫn</h3>
+                                <div class="yt">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CGBpuTKnrm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="image-monviet" src="/Project-frontend-CNPM-main/image/cuarangmuoi.jpg" alt="">
+                    <p>Cua rang muối giòn rụm, mặn mặn ngòn ngọt mang hương vị vừa mới lạ vừa kích thích vị giác là món ăn vặt rất nhiều người yêu thích. Không chỉ thơm ngon mà món cua rang muối còn chứa nhiều dinh dưỡng của hải sản biển, thích hợp đưa vào thực đơn món ăn gia đình.</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="row-monviet">
+                <div class="col-monviet">
+                    <a href="#thit-heo-chien">CÁCH LÀM THỊT HEO CHIÊN NƯỚC MẮM DA GIÒN THỊT MỀM NGON</a>
+                    <div class="dialog overlay" id="thit-heo-chien">
+                        <div class="dialog-body">
+                            <a class="dialog-close-btn" href="#">&times;</a>
+                            <h3>Cách làm Thịt Heo Chiên Nước Mắm da giòn thịt mềm ngon</h3>
+                            <p>Thịt heo chiên nước mắm là món ăn không quá xa lạ với bất kỳ gia đình nào. Miếng thịt khi cắn giòn tan trong miệng lại thấm trọn vẹn gia vị của nước mắm, hành tỏi. Quả thực là “mỹ vị nhân gian” không gì sánh được.</p>
+                            <h4>Chuẩn bị: 10 phút | Nấu: 30 phút |</h4>
+                            <div style="background-color:#fcb040; padding: 1px 20px; border-radius: 16px; box-shadow: 0 0 10px rgb(0 0 0 / 40%);">
+                                <h3 style="text-align: center;">Nguyên liệu</h3>
+                                <h4>1. Thịt ba chỉ</h4>
+                                <h4>2. Tỏi</h4>
+                                <h4>3. Tiêu</h4>
+                                <h4>4. Muối, đường, hạt nêm</h4>
+                                <h4>5. Xà lách</h4>
+                                <h4>6. Dưa leo</h4>
+                                <h4>7. Cà chua</h4>
+                                <h4>8. TƯơng Ớt</h4>
+                                <h4>9. Nước mắm</h4>
+                            </div>
+                            <div class="video-huongdan">
+                                <h3 style="text-align: center;">Video hướng dẫn</h3>
+                                <div class="yt">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3Oy9wthu2D0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="image-monviet" src="/Project-frontend-CNPM-main/image/thitheochiennuocmam.jpg" alt="">
+                    <p>Thịt heo chiên nước mắm là món ăn không quá xa lạ với bất kỳ gia đình nào. Miếng thịt khi cắn giòn tan trong miệng lại thấm trọn vẹn gia vị của nước mắm, hành tỏi. Quả thực là “mỹ vị nhân gian” không gì sánh được.</p>
+                </div>
+                <div class="col-monviet">
+                    <a href="#ca-nuc">CÁCH KHO CÁ NỤC THƠM NGON ĐẬM ĐÀ VÀ KHÔNG BỊ TANH</a>
+                    <div class="dialog overlay" id="ca-nuc">
+                        <div class="dialog-body">
+                            <a class="dialog-close-btn" href="#">&times;</a>
+                            <h3>Cách Kho Cá Nục thơm ngon đậm đà và không bị tanh</h3>
+                            <p>Món cá nục kho vốn rất quen thuộc trong các bữa cơm gia đình của người dân miền biển. Vị cá béo béo dễ ăn lại càng thêm thơm ngon, hấp dẫn khi được kho cùng các nguyên liệu khác.</p>
+                            <h4>Chuẩn bị: 10 phút | Nấu: 30 phút |</h4>
+                            <div style="background-color:#fcb040; padding: 1px 20px; border-radius: 16px; box-shadow: 0 0 10px rgb(0 0 0 / 40%);">
+                                <h3 style="text-align: center;">Nguyên liệu</h3>
+                                <h4>1. Cá nục</h4>
+                                <h4>2. Hành lá</h4>
+                                <h4>3. Ớt</h4>
+                                <h4>4. Hành tím</h4>
+                                <h4>5. Muối, đường, hạt nêm</h4>
+                                <h4>6. Nước mắm, tương ớt, tương cà</h4>
+                            </div>
+                            <div class="video-huongdan">
+                                <h3 style="text-align: center;">Video hướng dẫn</h3>
+                                <div class="yt">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TWmwUhexqYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="image-monviet" src="/Project-frontend-CNPM-main/image/canuc.jpg" alt="">
+                    <p>Món cá nục kho vốn rất quen thuộc trong các bữa cơm gia đình của người dân miền biển. Vị cá béo béo dễ ăn lại càng thêm thơm ngon, hấp dẫn khi được kho cùng các nguyên liệu khác.</p>
+                </div>
+                <div class="col-monviet">
+                    <a href="#lagu-bo">LAGU BÒ - CÁCH NẤU LAGU BÒ THƠM NGON ĐÚNG VỊ</a>
+                    <div class="dialog overlay" id="lagu-bo">
+                        <div class="dialog-body">
+                            <a class="dialog-close-btn" href="#">&times;</a>
+                            <h3>Lagu Bò - Cách nấu Lagu Bò thơm ngon đúng vị</h3>
+                            <p>Bò lagu là món ăn có nguồn gốc từ các nước phương Tây. Khi du nhập vào nước ta được rất nhiều người yêu thích. Không cần phải mất chi phí lớn đến nhà hàng thưởng thức, bạn có thể tự làm món bò lagu đãi cả nhà. Với bí quyết cách nấu lagu bò của chúng tôi, đảm bảo chỉ cần ngửi mùi thơm thôi là đã mê rồi!</p>
+                            <h4>Chuẩn bị: 10 phút | Nấu: 30 phút |</h4>
+                            <div style="background-color:#fcb040; padding: 1px 20px; border-radius: 16px; box-shadow: 0 0 10px rgb(0 0 0 / 40%);">
+                                <h3 style="text-align: center;">Nguyên liệu</h3>
+                                <h4>1. Nạm bò</h4>
+                                <h4>2. Khoai tây, cà rốt</h4>
+                                <h4>3. Hành tây, ngò rí</h4>
+                                <h4>4. Tỏi, gừng</h4>
+                                <h4>5. Pate gan</h4>
+                                <h4>6. Muối, đường, hạt nêm, dầu hào, nước tương, tương cà</h4>
+                            </div>
+                            <div class="video-huongdan">
+                                <h3 style="text-align: center;">Video hướng dẫn</h3>
+                                <div class="yt">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MbB-NN2Ce54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="image-monviet" src="/Project-frontend-CNPM-main/image/lagubo.jpg" alt="">
+                    <p>Bò lagu là món ăn có nguồn gốc từ các nước phương Tây. Khi du nhập vào nước ta được rất nhiều người yêu thích. Không cần phải mất chi phí lớn đến nhà hàng thưởng thức, bạn có thể tự làm món bò lagu đãi cả nhà. Với bí quyết cách nấu lagu bò của chúng tôi, đảm bảo chỉ cần ngửi mùi thơm thôi là đã mê rồi!</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+                        <!-- Footer -->
+        <div id="Footer">
+            <div class="row">
+                <div class="nav">
+                    <ul>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Hợp tác</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="footer">
+                <div class="row" style="text-align: center; margin-bottom: 20px;">
+                    <img src="/image/Screenshot 2022-04-27 135620.png" alt="logo" style="text-align: center;">
+                </div>
+                <div class="row" style="display: flex; justify-content: space-evenly;">
+                    <a href="#" style="padding: 0 53px 0 15px;"><img src="/image/logo-thuvienamthuc-footer.jpg" alt="#"></a>
+                    <div class="textwiged" style=" padding: 0 15px 0 15px;">
+                        <span style="color: #ffcc00; font-weight: 700; font-size: 18px;">Xem nhiều</span>
+                        <br>
+                        <br>
+                        <a href="#"><span class="fa ti-angle-right">Món Việt</span></a>
+                        <br>
+                        <a href="#"><span class="fa ti-angle-right">Món Âu</span></a>
+                        <br>
+                        <a href="#"><span class="fa ti-angle-right">Món Hoa</span></a>
+                    </div>
+                    <div class="textwiged" style=" padding: 0 15px 0 15px;">
+                        <span style="color: #ffcc00; font-weight: 700; font-size: 18px;">Video</span>
+                        <br>
+                        <br>
+                        <a href="#"><span class="fa ti-angle-right">TOP 10 món của năm</span></a>
+                        <br>
+                        <a href="#"><span class="fa ti-angle-right">TOP 10 món của tháng</span></a>
+                        <br>
+                        <a href="#"><span class="fa ti-angle-right">TOP 10 món của tuần</span></a>
+                    </div>
+                    <div class="textwiged" style=" padding: 0 15px 0 15px;">
+                        <span style="color: #ffcc00; font-weight: 700; font-size: 18px;">Văn phòng</span>
+                        <br>
+                        <br>
+                        <a href="#"><span class="fa ti-location-pin">497 Điện Biên Phủ, P.3, Q.3, Tp.HCM</span></a>
+                        <br>
+                        <a href="#"><span class="fa ti-mobile">Hotline: 0903 646 893</span></a>
+                    </div>
+                </div>
+                <div class="row" style="text-align: center;">
+                    <div class="copyright" style="border-top: 1px solid #5f5f5f;margin: 0 50px 0 50px; padding: 20px 0;">
+                        <p style="text-align: center;">
+                            <a href="https://www.facebook.com/" rel="noopener noreferrer" target="_blank">
+                                <button class="btnfb" type="button">Facebook</button>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UC-H3vXmfMXImwrsF0dDfdHQ?sub_confirmation=1" target="_blank">
+                                <button class="btnyt" style="" type="button">Youtube</button>
+                            </a>
+                        </p>
+                        <p style="text-align: center; color: white;">Copyright © 2022 ThuVienAmThuc.VN. Ghi rõ nguồn khi phát hành lại thông tin.</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+
+    
+</body>
+</html>

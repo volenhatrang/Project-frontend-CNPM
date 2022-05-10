@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/Form.css">
+    <link rel="stylesheet" href="./fonts/themify-icons/themify-icons.css"/>
+    <link rel="stylesheet" href="./css/introduce.css"/>
+    <link rel="stylesheet" href="./css/mon.css">
+    <title>Ẩm thực Thầy Y</title>
+
+        
+</head>
+<body>
+
+ <!-- FORM -->
+    <!-- LOGIN -->
+
+<div id="id01" class="modal">
+  
+    <form class="modal-content"  method="post">
+        <div class="container">
+  
+      
+          <div class="Title">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <h2><b>LOGIN</b></h2>
+          </div>
+          
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+            
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+  
+        </div>
+        
+    </form>
+  </div>
+  
+  
+      <!-- SIGNUP -->
+      <div id="id02" class="modal">
+          
+          <form class="modal-content">
+            <div class="container">
+              <div class="Title">
+                  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <h2><b>Sign Up</b></h2>
+                  <p>Please fill in this form to create an account.</p>
+              </div>
+              
+              <hr>
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+        
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+        
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+              
+              <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+              </label>
+              
+        
+              <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+              </div>
+            </div>
+          </form>
+     </div>
+
+
+
+ 
+ <!-- FORM -->
+
+
+
+    <div id="main">
+        <div id="header">
+            <div class="banner">
+                <ul class="heading-image">
+                    <li><img src="./image/logo thay y.jpg" class="logo" alt="logo" width="100px" ></li>
+                    <li><img src="./image/slogan-header.jpg" class="slogan" alt="slogan " height="130px" width="480px"></li>
+                </ul>
+               
+                
+                 
+                <ul class="btn">
+                    <li><button type="button" class="btn btn-warning" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+                        <i class="ti-user"></i> Đăng nhập</button></li>
+                    <li><button type="button" class="btn btn-warning"  onclick="document.getElementById('id02').style.display='block'" style="width:auto;" >
+                        Đăng kí</button></li>
+                </ul>
+
+
+            </div>
+            <div class="menu">
+                <ul class="nav_menu">
+                    <li><a href="./index.html">Trang chủ</a></li>
+                    <li><a href="./introduce.html">Giới Thiệu</a></li>
+                    <li><a href="./monviet.html">Món Việt</a></li>
+                    <li><a href="./monchay.html">Món Chay</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <div class="search_content">
+                    <img src="./image/search-prefix.png" />
+                    <input id="txtsearch" name="txtsearch" type="text" class="form-control" onblur="keywordBlur($(this))" onfocus="keywordFocus($(this))" placeholder="Tìm món ăn, nguyên liệu, cách nấu, dịp nấu"/>
+                </div>
+            </div>
+            <div class="slider"></div>
+        </div>
+                        <!-- Content -->
+        <div id="content-monviet">
+            <div class="row-monviet">
+                <div class="col-monviet">
+                    <a href="#cai-thia">CÁCH LÀM CẢI THÌA SỐT DẦU HÀO NẤM ĐÔNG CÔ CHAY THƠM NGON</a>
+                    <div class="dialog overlay" id="cai-thia">
+                        <div class="dialog-body">
+                            <a class="dialog-close-btn" href="#">&times;</a>
+                            <h3>CÁCH LÀM CẢI THÌA SỐT DẦU HÀO NẤM ĐÔNG CÔ CHAY THƠM NGON</h3>
+                            <p>Cải thìa xào dầu hào sau khi làm xong thì cải vẫn giữ được màu xanh đẹp mắt, kết hợp với dầu hào, tạo nên một món xào có mùi hương vô cùng hấp dẫn. Để biết cách làm món này như thế nào, thì bạn hãy đọc tiếp bài viết nha.</p>
+                            <h4>Chuẩn bị: 20 phút | Nấu: 15 phút |</h4>
+                            <div style="background-color:#fcb040; padding: 1px 20px; border-radius: 16px; box-shadow: 0 0 10px rgb(0 0 0 / 40%);">
+                                <h3 style="text-align: center;">Nguyên liệu</h3>
+                                <h4>1. Nắm đông cô</h4>
+                                <h4>2. Bạch linh</h4>
+                                <h4>3. Cải thìa</h4>
+                                <h4>4. Ngò rí</h4>
+                                <h4>5. Ớt sừng</h4>
+                                <h4>6. Mía cây</h4>
+                                <h4>7. Gừng</h4>
+                                <h4>8. Dầu hào chay, xì dầu, bột năng, dầu mè, bột ngọt</h4>
+                            </div>
+                            <div class="video-huongdan">
+                                <h3 style="text-align: center;">Video hướng dẫn</h3>
+                                <div class="yt">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wPRaCxjyVUs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="image-monviet" src="/Project-frontend-CNPM-main/image/caithia.jpg" alt="">
+                    <p>Cải thìa xào dầu hào sau khi làm xong thì cải vẫn giữ được màu xanh đẹp mắt, kết hợp với dầu hào, tạo nên một món xào có mùi hương vô cùng hấp dẫn. Để biết cách làm món này như thế nào, thì bạn hãy đọc tiếp bài viết nha.</p>
+                </div>
+                <div class="col-monviet">
+                    <a href="#hu-tieu">CÁCH LÀM HỦ TIẾU XÀO CHAY RẤT NGON CỦA NGƯỜI HOA</a>
+                    <div class="dialog overlay" id="hu-tieu">
+                        <div class="dialog-body">
+                            <a class="dialog-close-btn" href="#">&times;</a>
+                            <h3>CÁCH LÀM HỦ TIẾU XÀO CHAY RẤT NGON CỦA NGƯỜI HOA</h3>
+                            <p>Hủ tiếu không chỉ chế biến thành món nước mà còn có thể làm món hủ tiếu xào với hỗn hợp các nguyên liệu rau củ, nấm vừa thơm ngon, đậm đà vừa đầy đủ chất dinh dưỡng cho bữa ăn hàng ngày. Đặc biệt món ăn chay này có thể thêm vào thực đơn ăn sáng, ăn trưa hay ăn tối đều phù hợp.</p>
+                            <h4>Chuẩn bị: 30 phút | Nấu: 40 phút |</h4>
+                            <div style="background-color:#fcb040; padding: 1px 20px; border-radius: 16px; box-shadow: 0 0 10px rgb(0 0 0 / 40%);">
+                                <h3 style="text-align: center;">Nguyên liệu</h3>
+                                <h4>1. Hủ tiếu sợi to</h4>
+                                <h4>2. Cải ngọt</h4>
+                                <h4>3. Nấm đông cô</h4>
+                                <h4>4. Nấm bạch linh</h4>
+                                <h4>5. Cá viên chay</h4>
+                                <h4>6. Giá sống</h4></div>
+                            <div class="video-huongdan">
+                                <h3 style="text-align: center;">Video hướng dẫn</h3>
+                                <div class="yt">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8Fbq03XLLRU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="image-monviet" src="/Project-frontend-CNPM-main/image/hutiu.jpg" alt="">
+                    <p>Hủ tiếu không chỉ chế biến thành món nước mà còn có thể làm món hủ tiếu xào với hỗn hợp các nguyên liệu rau củ, nấm vừa thơm ngon, đậm đà vừa đầy đủ chất dinh dưỡng cho bữa ăn hàng ngày. Đặc biệt món ăn chay này có thể thêm vào thực đơn ăn sáng, ăn trưa hay ăn tối đều phù hợp.</p>
+                </div>
+                <div class="col-monviet">
+                    <a href="#suon-xao">Cách làm Sườn Xào Chua Ngọt Chay thơm ngon đúng vị</a>
+                    <div class="dialog overlay" id="suon-xao">
+                        <div class="dialog-body">
+                            <a class="dialog-close-btn" href="#">&times;</a>
+                            <h3>Cách làm Sườn Xào Chua Ngọt Chay thơm ngon đúng vị</h3>
+                            <p>Sườn Xào Chua Ngọt nấu theo cách nấu và hương vị người Hoa sẽ giúp bạn thêm một món ngon vào bữa cơm gia đình.</p>
+                            <h4>Chuẩn bị: 10 phút | Nấu: 30 phút |</h4>
+                            <div style="background-color:#fcb040; padding: 1px 20px; border-radius: 16px; box-shadow: 0 0 10px rgb(0 0 0 / 40%);">
+                                <h3 style="text-align: center;">Nguyên liệu</h3>
+                                <h4>1. Sường chay</h4>
+                                <h4>2. Ớt chuông xanh, đỏ</h4>
+                                <h4>3. Cà chua, thơm, củ kiệu, gừng băm, ớt sừng</h4>
+                                <h4>4. Cà paste, sốt OK, giấm catchup</h4>
+                                <h4>5. Dầu điều, màu gạch tôm, bột ngọt, đường thẻ, muối</h4>
+                                <h4>6. Bột lion, bột nổi, bột bắp bột năng</h4>
+                                <h4>7. Giấm trắng</h4>
+                                <h4>8. Tương cà Cholimex</h4>
+                            </div>
+                            <div class="video-huongdan">
+                                <h3 style="text-align: center;">Video hướng dẫn</h3>
+                                <div class="yt">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NqJ25BLvudg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="image-monviet" src="/Project-frontend-CNPM-main/image/suonxao.jpg" alt="">
+                    <p>Sườn Xào Chua Ngọt nấu theo cách nấu và hương vị người Hoa sẽ giúp bạn thêm một món ngon vào bữa cơm gia đình.</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="row-monviet">
+                <div class="col-monviet">
+                    <a href="#dau-hu-chung">Cách làm Đậu Hủ Chưng Tương đậm đà, đưa cơm</a>
+                    <div class="dialog overlay" id="dau-hu-chung">
+                        <div class="dialog-body">
+                            <a class="dialog-close-btn" href="#">&times;</a>
+                            <h3>Cách làm Đậu Hủ Chưng Tương đậm đà, đưa cơm</h3>
+                            <p>Đậu hủ chưng tương là món ăn chay, có mùi thơm đặc trưng của tương hột hòa quyện trong từng miếng đậu hủ mềm ngon. Đây sẽ là món ăn tuyệt vời cho gia đình đổi vị vào bữa cơm. Nào hãy cùng xem cách làm Đậu hủ chưng tương đậm đà ấn tượng trong lần đầu thưởng thức ngay nhé!</p>
+                            <h4>Chuẩn bị: 10 phút | Nấu: 30 phút |</h4>
+                            <div style="background-color:#fcb040; padding: 1px 20px; border-radius: 16px; box-shadow: 0 0 10px rgb(0 0 0 / 40%);">
+                                <h3 style="text-align: center;">Nguyên liệu</h3>
+                                <h4>1. 200g nấm đông cô</h4>
+                                <h4>2. 300g đậu hủ non</h4>
+                                <h4>3. Hành baro, ngò rí, ớt sừng, tương hột</h4>
+                                <h4>4. Muối, tiêu, đường</h4>
+                                <h4>5. Bột canh, nước tương</h4>
+                                <h4>6. Dầu ăn, nước dùng chay</h4>
+                                
+                            </div>
+                            <div class="video-huongdan">
+                                <h3 style="text-align: center;">Video hướng dẫn</h3>
+                                <div class="yt">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PC7bMe4OTpI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="image-monviet" src="/Project-frontend-CNPM-main/image/dauhuchungtuong.jpg" alt="">
+                    <p>Đậu hủ chưng tương là món ăn chay, có mùi thơm đặc trưng của tương hột hòa quyện trong từng miếng đậu hủ mềm ngon. Đây sẽ là món ăn tuyệt vời cho gia đình đổi vị vào bữa cơm. Nào hãy cùng xem cách làm Đậu hủ chưng tương đậm đà ấn tượng trong lần đầu thưởng thức ngay nhé!</p>
+                </div>
+                <div class="col-monviet">
+                    <a href="#my-chay">CÁCH LÀM MÌ XÀO CHAY THƠM NGON VÀ DỄ LÀM</a>
+                    <div class="dialog overlay" id="my-chay">
+                        <div class="dialog-body">
+                            <a class="dialog-close-btn" href="#">&times;</a>
+                            <h3>Cách làm Mì Xào Chay thơm ngon và dễ làm</h3>
+                            <p>Mì xào chay là một món ăn vô cùng thơm ngon và thanh đạm mà bạn có thể làm cho các bữa cơm gia đình của mình. Nếu bạn chưa biết cách làm món ăn này thì hãy cùng tìm hiểu cách làm trong bài viết này nhé.</p>
+                            <h4>Chuẩn bị: 10 phút | Nấu: 30 phút |</h4>
+                            <div style="background-color:#fcb040; padding: 1px 20px; border-radius: 16px; box-shadow: 0 0 10px rgb(0 0 0 / 40%);">
+                                <h3 style="text-align: center;">Nguyên liệu</h3>
+                                <h4>1. Mỳ chay</h4>
+                                <h4>2. 200g cải thảo</h4>
+                                <h4>3. 100g cà rốt</h4>
+                                <h4>4. Nấm rơm</h4>
+                                <h4>5. Đậu que</h4>
+                                <h4>6. 30g hành baro</h4>
+                                <h4>7. 30g cần tàu</h4>
+                                <h4>8. Ngò rí, ớt</h4>
+                                <h4>9. Hạt nêm, Muối, Đường, Tiêu, Dầu hào chay, Nước tương, Tương ớt</h4>
+                            </div>
+                            <div class="video-huongdan">
+                                <h3 style="text-align: center;">Video hướng dẫn</h3>
+                                <div class="yt">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Hwf5y6ob22k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                          
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="image-monviet" src="/Project-frontend-CNPM-main/image/mixaochay.jpg" alt="">
+                    <p>Mì xào chay là một món ăn vô cùng thơm ngon và thanh đạm mà bạn có thể làm cho các bữa cơm gia đình của mình. Nếu bạn chưa biết cách làm món ăn này thì hãy cùng tìm hiểu cách làm trong bài viết này nhé.</p>
+                </div>
+                <div class="col-monviet">
+                    <a href="#dau-hu-tu-xuyen">CÁCH LÀM ĐẬU HỦ TỨ XUYÊN VỪA THANH ĐẠM, VỪA HẤP DẪN</a>
+                    <div class="dialog overlay" id="dau-hu-tu-xuyen">
+                        <div class="dialog-body">
+                            <a class="dialog-close-btn" href="#">&times;</a>
+                            <h3>CÁCH LÀM ĐẬU HỦ TỨ XUYÊN VỪA THANH ĐẠM, VỪA HẤP DẪN</h3>
+                            <p>Bạn đang tìm một món ăn chay vừa thanh đạm, vừa thơm ngon, đậm đà lại còn đầy đủ dinh dưỡng? Đậu Hủ Tứ Xuyên sẽ là một sự lựa chọn tuyệt vời cho bạn. Với vị đậu hủ thanh mát hòa cùng nước sốt chua cay đã làm nên một món ăn khiến người già đến trẻ nhỏ đều mê. Nào hãy cùng xem cách làm món Đậu Hủ Tứ Xuyên ngay nhé!</p>
+                            <h4>Chuẩn bị: 10 phút | Nấu: 30 phút |</h4>
+                            <div style="background-color:#fcb040; padding: 1px 20px; border-radius: 16px; box-shadow: 0 0 10px rgb(0 0 0 / 40%);">
+                                <h3 style="text-align: center;">Nguyên liệu</h3>
+                                <h4>1. 300g đậu hủ non</h4>
+                                <h4>2. 500g nấm rơm</h4>
+                                <h4>3. 500g nấm đùi gà</h4>
+                                <h4>4. Tương cà, tương ớt, tương ớt hột</h4>
+                                <h4>5. Tiêu, đường, bột canh, nước mắm</h4>
+                                <h4>6. Ngò rí, hành baro, ớt sừng</h4>
+                                <h4>7. Nước dùng món chay</h4>
+                            </div>
+                            <div class="video-huongdan">
+                                <h3 style="text-align: center;">Video hướng dẫn</h3>
+                                <div class="yt">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/OFAnOQgEgg8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="image-monviet" src="/Project-frontend-CNPM-main/image/dauhutuxuyen.jpg" alt="">
+                    <p>Bạn đang tìm một món ăn chay vừa thanh đạm, vừa thơm ngon, đậm đà lại còn đầy đủ dinh dưỡng? Đậu Hủ Tứ Xuyên sẽ là một sự lựa chọn tuyệt vời cho bạn. Với vị đậu hủ thanh mát hòa cùng nước sốt chua cay đã làm nên một món ăn khiến người già đến trẻ nhỏ đều mê. Nào hãy cùng xem cách làm món Đậu Hủ Tứ Xuyên ngay nhé!</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+                        <!-- Footer -->
+        <div id="Footer">
+            <div class="row">
+                <div class="nav">
+                    <ul>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Hợp tác</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="footer">
+                <div class="row" style="text-align: center; margin-bottom: 20px;">
+                    <img src="/image/Screenshot 2022-04-27 135620.png" alt="logo" style="text-align: center;">
+                </div>
+                <div class="row" style="display: flex; justify-content: space-evenly;">
+                    <a href="#" style="padding: 0 53px 0 15px;"><img src="/image/logo-thuvienamthuc-footer.jpg" alt="#"></a>
+                    <div class="textwiged" style=" padding: 0 15px 0 15px;">
+                        <span style="color: #ffcc00; font-weight: 700; font-size: 18px;">Xem nhiều</span>
+                        <br>
+                        <br>
+                        <a href="#"><span class="fa ti-angle-right">Món Việt</span></a>
+                        <br>
+                        <a href="#"><span class="fa ti-angle-right">Món Âu</span></a>
+                        <br>
+                        <a href="#"><span class="fa ti-angle-right">Món Hoa</span></a>
+                    </div>
+                    <div class="textwiged" style=" padding: 0 15px 0 15px;">
+                        <span style="color: #ffcc00; font-weight: 700; font-size: 18px;">Video</span>
+                        <br>
+                        <br>
+                        <a href="#"><span class="fa ti-angle-right">TOP 10 món của năm</span></a>
+                        <br>
+                        <a href="#"><span class="fa ti-angle-right">TOP 10 món của tháng</span></a>
+                        <br>
+                        <a href="#"><span class="fa ti-angle-right">TOP 10 món của tuần</span></a>
+                    </div>
+                    <div class="textwiged" style=" padding: 0 15px 0 15px;">
+                        <span style="color: #ffcc00; font-weight: 700; font-size: 18px;">Văn phòng</span>
+                        <br>
+                        <br>
+                        <a href="#"><span class="fa ti-location-pin">497 Điện Biên Phủ, P.3, Q.3, Tp.HCM</span></a>
+                        <br>
+                        <a href="#"><span class="fa ti-mobile">Hotline: 0903 646 893</span></a>
+                    </div>
+                </div>
+                <div class="row" style="text-align: center;">
+                    <div class="copyright" style="border-top: 1px solid #5f5f5f;margin: 0 50px 0 50px; padding: 20px 0;">
+                        <p style="text-align: center;">
+                            <a href="https://www.facebook.com/" rel="noopener noreferrer" target="_blank">
+                                <button class="btnfb" type="button">Facebook</button>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UC-H3vXmfMXImwrsF0dDfdHQ?sub_confirmation=1" target="_blank">
+                                <button class="btnyt" style="" type="button">Youtube</button>
+                            </a>
+                        </p>
+                        <p style="text-align: center; color: white;">Copyright © 2022 ThuVienAmThuc.VN. Ghi rõ nguồn khi phát hành lại thông tin.</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>
